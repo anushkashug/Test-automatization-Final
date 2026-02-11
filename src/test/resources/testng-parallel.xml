@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="AutomationExercise Full Suite" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="UI">
+        <packages>
+            <package name="com.Ana.tests.ui"/>
+        </packages>
+    </test>
+
+    <test name="API">
+        <packages>
+            <package name="com.Ana.tests.api"/>
+        </packages>
+
+    </test>
+</suite>
